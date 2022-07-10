@@ -40,10 +40,15 @@ class XMLWebServiceInvoker:
         pass
 
     def request(self, cunbr):
-        # Make request to xml webservice with cunbr number
-        # returns xml webservice response as string
-        # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
+
+
+
+
+       # Make request to xml webservice with cunbr number
+       # returns xml webservice response as string
+       # IMPLEMENT ME PLZ!
+
 
 
 class Adapter(Target):
@@ -74,7 +79,6 @@ class Adapter(Target):
         #     }
         #   }
         # }
-        raise NotImplementedError
 
 
 class AbstractJsonBuilder(ABC):
@@ -88,31 +92,31 @@ class AbstractJsonBuilder(ABC):
 
     def build(self):
         # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
 
 
 class JsonResponseBuilder(AbstractJsonBuilder):
     def __init__(self):
         # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
 
     def with_cunbr(self, cunbr):
         # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
 
     def with_accounts(self, accounts):
         # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
 
 
 class JsonRequestBuilder(AbstractJsonBuilder):
     def __init__(self):
         # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
 
     def with_cunbr(self, cunbr):
         # IMPLEMENT ME PLZ!
-        raise NotImplementedError
+
 
 
 def client_code(service, payload):
@@ -137,6 +141,9 @@ if __name__ == '__main__':
     with open('json_responses.txt', 'w') as file:
         for response in json_responses:
             file.write(response)
+
+
+
     # target = Target()
     # response = client_code(target, '{"customer_request": {"customer": {"cunbr": "2878037"}}}')
     # print(response)
